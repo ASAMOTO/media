@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* line 3, /Users/user/asamoto_design/portfolio/css/css.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 22, /Users/user/asamoto_design/portfolio/css/css.scss */
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-color: #313131;
+  text-align: center; }
+  /* line 30, /Users/user/asamoto_design/portfolio/css/css.scss */
+  header h1 {
+    width: 100%;
+    color: #fff;
+    letter-spacing: 10px;
+    font-size: 48px;
+    font-size: 4.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    margin-top: 200px; }
+  /* line 40, /Users/user/asamoto_design/portfolio/css/css.scss */
+  header h2 {
+    width: 100%;
+    color: #fff;
+    letter-spacing: 10px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-bottom: 100px; }
+  /* line 48, /Users/user/asamoto_design/portfolio/css/css.scss */
+  header .order_btn {
+    position: absolute;
+    top: 70px;
+    right: 20%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 15px 25px;
+    border: 2px solid #fff;
+    border-radius: 5px; }
+  /* line 59, /Users/user/asamoto_design/portfolio/css/css.scss */
+  header .order_btn:hover {
+    background-color: #fff;
+    border-color: darkorange;
+    color: darkorange;
+    transition: all 0.5s; }
+  /* line 65, /Users/user/asamoto_design/portfolio/css/css.scss */
+  header .go_portfolio {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 15px 25px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-right: 30px; }
+  /* line 74, /Users/user/asamoto_design/portfolio/css/css.scss */
+  header .go_portfolio:hover {
+    background-color: #fff;
+    border-color: darkorange;
+    color: darkorange;
+    transition: all 0.5s; }
+  /* line 80, /Users/user/asamoto_design/portfolio/css/css.scss */
+  header .go_media {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 15px 25px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-left: 30px; }
+  /* line 89, /Users/user/asamoto_design/portfolio/css/css.scss */
+  header .go_media:hover {
+    background-color: #fff;
+    border-color: darkorange;
+    color: darkorange;
+    transition: all 0.5s; }
+
+/* line 104, /Users/user/asamoto_design/portfolio/css/css.scss */
+#favorite_article {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fafafa; }
+  /* line 109, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #favorite_article .inner_box {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden; }
+  /* line 116, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #favorite_article h3 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    color: #313131; }
+  /* line 122, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #favorite_article .article_box {
+    width: 30%;
+    float: left;
+    margin-left: 0%; }
+    /* line 126, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #favorite_article .article_box img {
+      width: 100%; }
+    /* line 129, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #favorite_article .article_box .article_title {
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 300%; }
+    /* line 133, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #favorite_article .article_box .article_text {
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 200%; }
+  /* line 138, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #favorite_article .center {
+    margin-left: 4.5%;
+    margin-right: 4.5%; }
+
+/* line 150, /Users/user/asamoto_design/portfolio/css/css.scss */
+#asamoto_profile {
+  display: block;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  background-image: url(../images/asamoto_profile_bg.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+  /* line 159, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #asamoto_profile .inner_box {
+    position: relative;
+    width: 60%;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden; }
+    /* line 167, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_profile .inner_box h3 {
+      font-size: 24px;
+      font-size: 2.4rem;
+      letter-spacing: 5px;
+      margin-bottom: 30px;
+      color: #fff;
+      font-weight: bold; }
+    /* line 174, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_profile .inner_box .box {
+      color: #fff;
+      font-weight: bold;
+      width: 40%;
+      margin-bottom: 20px; }
+      /* line 179, /Users/user/asamoto_design/portfolio/css/css.scss */
+      #asamoto_profile .inner_box .box .midashi {
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 300%; }
+      /* line 183, /Users/user/asamoto_design/portfolio/css/css.scss */
+      #asamoto_profile .inner_box .box .text {
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 200%; }
+      /* line 187, /Users/user/asamoto_design/portfolio/css/css.scss */
+      #asamoto_profile .inner_box .box .name {
+        font-size: 36px;
+        font-size: 3.6rem;
+        font-family: 'Josefin Sans', sans-serif; }
+    /* line 192, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_profile .inner_box .box_profile {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      color: #fff;
+      font-weight: bold;
+      width: 50%;
+      margin-bottom: 20px;
+      margin-top: 100px;
+      text-align: right; }
+      /* line 202, /Users/user/asamoto_design/portfolio/css/css.scss */
+      #asamoto_profile .inner_box .box_profile .midashi {
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 300%; }
+      /* line 206, /Users/user/asamoto_design/portfolio/css/css.scss */
+      #asamoto_profile .inner_box .box_profile .text {
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 200%; }
+      /* line 210, /Users/user/asamoto_design/portfolio/css/css.scss */
+      #asamoto_profile .inner_box .box_profile .name {
+        font-size: 36px;
+        font-size: 3.6rem;
+        font-family: 'Josefin Sans', sans-serif; }
+  @media (max-width: 550px) {
+    /* line 150, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_profile {
+      background-size: cover; } }
+
+/* line 227, /Users/user/asamoto_design/portfolio/css/css.scss */
+#asamoto_history {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+  /* line 236, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #asamoto_history .inner_box {
+    position: relative;
+    width: 60%;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden; }
+  /* line 245, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #asamoto_history h3 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    color: #313131; }
+  /* line 251, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #asamoto_history .explain {
+    font-size: 13px;
+    font-size: 1.3rem;
+    margin-bottom: 30px; }
+  /* line 256, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #asamoto_history .product_box {
+    width: 100%;
+    overflow: hidden; }
+    /* line 259, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history .product_box .left_box {
+      width: 50%;
+      float: left;
+      overflow: hidden; }
+      /* line 263, /Users/user/asamoto_design/portfolio/css/css.scss */
+      #asamoto_history .product_box .left_box img {
+        width: 100%; }
+    /* line 267, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history .product_box .right_box {
+      width: 50%;
+      float: left;
+      overflow: hidden; }
+      /* line 271, /Users/user/asamoto_design/portfolio/css/css.scss */
+      #asamoto_history .product_box .right_box h4 {
+        font-size: 16px;
+        font-size: 1.6rem;
+        color: #313131; }
+  /* line 278, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #asamoto_history .box {
+    color: #fff;
+    font-weight: bold;
+    width: 40%;
+    margin-bottom: 20px; }
+    /* line 283, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history .box .midashi {
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 300%; }
+    /* line 287, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history .box .text {
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 200%; }
+    /* line 291, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history .box .name {
+      font-size: 36px;
+      font-size: 3.6rem;
+      font-family: 'Josefin Sans', sans-serif; }
+  /* line 297, /Users/user/asamoto_design/portfolio/css/css.scss */
+  #asamoto_history .box_profile {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #fff;
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    text-align: right; }
+    /* line 307, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history .box_profile .midashi {
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 300%; }
+    /* line 311, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history .box_profile .text {
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 200%; }
+    /* line 315, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history .box_profile .name {
+      font-size: 36px;
+      font-size: 3.6rem;
+      font-family: 'Josefin Sans', sans-serif; }
+  @media (max-width: 550px) {
+    /* line 227, /Users/user/asamoto_design/portfolio/css/css.scss */
+    #asamoto_history {
+      background-size: cover; } }
+
+/*# sourceMappingURL=css.css.map */

@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+html {
+font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+font-size: $size + px;
+font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$blue1 : #42b9d0;
+$blue2 : #339fd1;
+$gray_blue : #eaf2f4;
+$black : #313131;
+
+
+//
+//HEADER AREA START---▼
+//
+header{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color: #313131;
+    text-align: center;
+    h1{
+        width: 100%;
+        color: #fff;
+        letter-spacing: 10px;
+        @include fontsize(48);
+        font-family: 'Josefin Sans', sans-serif;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #fff;
+        margin-top: 200px;
+    }
+    h2{
+     width: 100%;
+        color: #fff;
+        letter-spacing: 10px;
+        font-family: $ja_font;
+        @include fontsize(18);
+        margin-bottom: 100px;
+    }
+    .order_btn{
+        position: absolute;
+        top: 70px;
+        right: 20%;
+        color: #fff;
+        text-decoration: none;
+        @include fontsize(16);
+        padding: 15px 25px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+    }
+    .order_btn:hover{
+        background-color: #fff;
+        border-color: darkorange;
+        color: darkorange;
+        transition: all 0.5s;
+    }
+    .go_portfolio{
+        color: #fff;
+        text-decoration: none;
+        @include fontsize(16);
+        padding: 15px 25px;
+        border:2px solid #fff;
+        border-radius: 5px;
+        margin-right: 30px;
+    }
+    .go_portfolio:hover{
+        background-color: #fff;
+        border-color: darkorange;
+        color: darkorange;
+        transition: all 0.5s;
+    }
+    .go_media{
+        color: #fff;
+        text-decoration: none;
+        @include fontsize(16);
+        padding: 15px 25px;
+        border: 2px solid #fff;
+        border-radius:5px;
+        margin-left: 30px;
+    }
+    .go_media:hover{
+        background-color: #fff;
+        border-color: darkorange;
+        color: darkorange;
+        transition: all 0.5s;
+    }
+    
+}
+//
+//HEADER AREA END---▲
+//
+
+//
+//FAVORITE ARTICLE AREA START---▼
+//
+#favorite_article{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fafafa;
+    .inner_box{
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    h3{
+        @include fontsize(24);
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+        color: $black;
+    }
+    .article_box{
+        width: 30%;
+        float: left;
+        margin-left: 0%;
+        img{
+            width: 100%;
+        }
+        .article_title{
+            @include fontsize(16);
+            line-height: 300%;
+        }
+        .article_text{
+            @include fontsize(13);
+            line-height: 200%;
+        }
+    }
+    .center{
+            margin-left: 4.5%;
+            margin-right: 4.5%;
+    }
+}
+//
+//FAVORITE ARTICLE AREA END---▲
+//
+
+//
+//ASAMOTO PROFILE AREA START---▼
+//
+#asamoto_profile{
+    display: block;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-image: url(../images/asamoto_profile_bg.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    .inner_box{
+        position: relative;
+        width: 60%;
+        height: 700px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        h3{
+            @include fontsize(24);
+            letter-spacing: 5px;
+            margin-bottom: 30px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .box{
+            color: #fff;
+            font-weight: bold;
+            width: 40%;
+            margin-bottom: 20px;
+            .midashi{
+                @include fontsize(16);
+                line-height: 300%;
+            }
+            .text{
+                @include fontsize(13);
+                line-height: 200%;
+            }
+            .name{
+                @include fontsize(36);
+                font-family: 'Josefin Sans', sans-serif;
+            }
+        }
+        .box_profile{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            color: #fff;
+            font-weight: bold;
+            width: 50%;
+            margin-bottom: 20px;
+            margin-top: 100px;
+            text-align: right;
+            .midashi{
+                @include fontsize(16);
+                line-height: 300%;
+            }
+            .text{
+                @include fontsize(13);
+                line-height: 200%;
+            }
+            .name{
+                @include fontsize(36);
+                font-family: 'Josefin Sans', sans-serif;
+            }
+        }
+    }
+    @media (max-width: 550px) {
+        background-size: cover;
+    }
+}
+//
+//ASAMOTO PROFILE AREA END---▲
+//
+
+//
+//ASAMOTO HISTORY AREA START---▼
+//
+#asamoto_history{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    .inner_box{
+        position: relative;
+        width: 60%;
+        height: 700px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    h3{
+        @include fontsize(24);
+        letter-spacing: 5px;
+        margin-bottom: 15px;
+        color: $black;
+    }
+    .explain{
+        @include fontsize(13);
+        margin-bottom: 30px;
+    }
+    
+    .product_box{
+        width: 100%;
+        overflow: hidden;
+        .left_box{
+            width: 50%;
+            float: left;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        .right_box{
+            width: 50%;
+            float: left;
+            overflow: hidden;
+            h4{
+                @include fontsize(16);
+                color: $black;
+            }
+        }
+    }
+    
+    .box{
+        color: #fff;
+        font-weight: bold;
+        width: 40%;
+        margin-bottom: 20px;
+        .midashi{
+            @include fontsize(16);
+            line-height: 300%;
+        }
+        .text{
+            @include fontsize(13);
+            line-height: 200%;
+        }
+        .name{
+            @include fontsize(36);
+            font-family: 'Josefin Sans', sans-serif;
+            
+        }
+    }
+    .box_profile{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        color: #fff;
+        font-weight: bold;
+        width: 50%;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        text-align: right;
+        .midashi{
+            @include fontsize(16);
+            line-height: 300%;
+        }
+        .text{
+            @include fontsize(13);
+            line-height: 200%;
+        }
+        .name{
+            @include fontsize(36);
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+    @media (max-width: 550px) {
+        background-size: cover;
+    }
+}
+//
+//ASAMOTO HISTORY AREA END---▲
+//
