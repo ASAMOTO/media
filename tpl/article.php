@@ -161,41 +161,21 @@
                 </div>
                 <div id="favorite_article">
                     <h3>人気の記事</h3>
+                    <?php
+                      foreach ($favorite_article as $key => $value):
+                     ?>
                     <div class="article_box">
-                        <div class="image_box_css">CSS</div>
+                        <div class="image_box_<?= $favorite_article[$key]["article_css"]?>"><?= $favorite_article[$key]["article_genre"]?></div>
                         <div class="text_box">
-                            <small><span class="date">2016.06.28</span><span class="view">30view</span></small>
-                            <h2><a href="#">CSSだけで実現するボタン10パターン</a></h2>
+                            <small><span class="date">
+                              <?php list($yy,$mm,$dd,$time) = preg_split('/[- ]/', $favorite_article[$key]["article_date"]); ?>
+                              <?=$yy?>.<?=$mm?>.<?=$dd?>
+                            </span>
+                            <span class="view"><?=$favorite_article[$key]["article_view"]?>view</span></small>
+                            <h2><a href="./article.php?article_id=<?=$favorite_article[$key]["article_id"]?>"><?=$favorite_article[$key]["article_title"]?></a></h2>
                         </div>
                     </div>
-                    <div class="article_box">
-                        <div class="image_box_html">HTML</div>
-                        <div class="text_box">
-                            <small><span class="date">2016.06.28</span><span class="view">30view</span></small>
-                            <h2><a href="#">CSSだけで実現するボタン10パターン</a></h2>
-                        </div>
-                    </div>
-                    <div class="article_box">
-                        <div class="image_box_web">Web Design</div>
-                        <div class="text_box">
-                            <small><span class="date">2016.06.28</span><span class="view">30view</span></small>
-                            <h2><a href="#">CSSだけで実現するボタン10パターン</a></h2>
-                        </div>
-                    </div>
-                    <div class="article_box">
-                        <div class="image_box_jquery">jQuery</div>
-                        <div class="text_box">
-                            <small><span class="date">2016.06.28</span><span class="view">30view</span></small>
-                            <h2><a href="#">CSSだけで実現するボタン10パターン</a></h2>
-                        </div>
-                    </div>
-                    <div class="article_box">
-                        <div class="image_box_web">Web Design</div>
-                        <div class="text_box">
-                            <small><span class="date">2016.06.28</span><span class="view">30view</span></small>
-                            <h2><a href="#">CSSだけで実現するボタン10パターン</a></h2>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
                 <div id="side_ad2">
                   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
